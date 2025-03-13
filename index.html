@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- bar de navigation -->
+    <!-- desktop -->
+    <nav
+      class="flex flex-row-reverse lg:flex-row z-40 justify-between h-16 items-center px-7 md:px-20 shadow-lg"
+    >
+      <a href="">
+        <img src="logo.png" class="h-[50px] w-full object-contain" alt="" />
+      </a>
+
+      <!-- menu open icon  -->
+
+      <i
+        class="bi bi-list px-2 font-bold text-4xl lg:hidden cursor-pointer border-2 border-gray-400 rounded-[5px]"
+        id="menu-open"
+      ></i>
+
+      <!-- liste de menu -->
+      <ul class="hidden lg:flex gap-x-5 uppercase">
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >A propos</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- menu mobile -->
+    <!-- overlay -->
+    <div
+      id="menu-overlay"
+      class="-translate-x-full w-full z-50 h-full bg-[rgba(0,0,0,0.3)] fixed top-0 left-0"
+    ></div>
+    <!-- menu -->
+    <div
+      id="menu-mobile"
+      class="bg-black ps-6 h-full absolute top-0 left-0 pt-7 z-50 -translate-x-full transition-transform ease-in-out duration-300"
+    >
+      <!-- menu close icon -->
+      <i
+        class="bi bi-x text-white text-4xl font-bold cursor-pointer"
+        id="menu-close"
+      ></i>
+
+      <ul class="flex gap-y-5 uppercase flex-col p-7 mx-10">
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >A propos</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a class="text-gray-600 font-bold hover:text-blue-700" href=""
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- link js -->
+    <script src="script.js"></script>
+  </body>
+</html>
